@@ -1,0 +1,34 @@
+(function() {
+
+
+  // function
+  (function ($) {
+    $.include = function (options) {
+      $.ajax({
+        url: options.url,
+        async: true,
+        success: function (result) {
+          result = $(result).filter("#include").html();
+          if (options.prependResult) {
+            $("body").prepend(result);
+          } else {
+            $("body").append(result);
+          }
+        }
+      });
+    };
+  }(jQuery));
+
+  // function invocation
+  $.include({url: '_modal.html', prependResult: true});
+  $.include({url: '_content.html', prependResult: true});
+  $.include({url: '_header.html', prependResult: true});
+  $.include({url: '_footer.html', prependResult: false});
+
+  // close modal window (don't work in preview, choose a real browser)
+  window.onload = function () {
+    $("#modal").click(function(){
+      $(this).fadeOut()
+    });
+  }
+})();
