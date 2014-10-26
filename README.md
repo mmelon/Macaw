@@ -1,13 +1,13 @@
-# include for Macaw (insert the content of one file into another one).
-
-* * *
+# include for Macaw
+*insert the content of one file into another one.*
 
 Until the team adds an include functionality, i'm sharing with you this trick which will allow you to include several pages (or elements) into another one.
 Include means you only care block after block, focus only on one point not the whole page, and when you change one parameter... it changes everywhere. Welcome to Macaw 2.0 ;)
 
 ### the Code  
 
-```Function
+```
+Function
 (function ($) {
   $.include = function (options) {
     $.ajax({
@@ -23,7 +23,8 @@ Include means you only care block after block, focus only on one point not the w
       }
     });
   };
-}(jQuery));```
+}(jQuery));
+```
 
 > **Notes:**
 > #include: contains the element that you want to load  
@@ -31,8 +32,10 @@ Include means you only care block after block, focus only on one point not the w
 > body: where you'll load those elements (you can also target an "#ID" or ".style" ()but careful with this last one)).  
 
 ### Function invocation  
-```$.include({url: '_header.html', prependResult: true});
-$.include({url: '_footer.html', prependResult: false});```
+```
+$.include({url: '_header.html', prependResult: true});
+$.include({url: '_footer.html', prependResult: false});
+```
 
 > **Notes**
 > prepend=true => load before
