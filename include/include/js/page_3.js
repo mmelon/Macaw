@@ -6,7 +6,7 @@
     $.include = function (options) {
       $.ajax({
         url: options.url,
-        async: true,
+        async: false,
         success: function (result) {
           result = $(result).filter("#include").html();
           if (options.prependResult) {
