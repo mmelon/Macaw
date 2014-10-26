@@ -1,5 +1,4 @@
-# include for Macaw
-*insert the content of one file into another one.*
+# \#include for Macaw
 
 Until the team adds an include functionality, i'm sharing with you this trick which will allow you to include several pages (or elements) into another one.  
 Include means you only care block after block, focus only on one point not the whole page, and when you change one parameter... it changes everywhere. Welcome to Macaw 2.0 ;)  
