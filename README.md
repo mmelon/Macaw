@@ -6,7 +6,6 @@ Include means you only care block after block, focus only on one point not the w
 ### the Code  
 
 ```
-Function
 (function ($) {
   $.include = function (options) {
     $.ajax({
