@@ -44,8 +44,6 @@ $.include({url: '_footer.html', prependResult: false});
 **the negatives points:**  
 - Macaw will export full pages, it means you'll have all metadata, styles and scripts links. You'll need to erase those and use some front-end dev tools before building the final page.  
 Example of front-dev tool: Hammer (http://hammerformac.com/), Prepros (http://alphapixels.com/prepros/), Mixture (http://mixture.io/), Codekit (https://incident57.com/codekit/index.html) or a build system like Grunt, Gulp or npm.  
-- Sometimes, blocks are jumping, just refresh if it happens.  
-- Script won't load inside the default preview (use your real browser in private mode instead).  
 
 **For all javascript junkies, don't hesitate to tweak this code and share ;)**  
 
