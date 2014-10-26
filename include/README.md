@@ -10,7 +10,7 @@ Include means you only care block after block, focus only on one point not the w
   $.include = function (options) {
     $.ajax({
       url: options.url,
-      async: true, //!important
+      async: false, //!important
       success: function (result) {
         result = $(result).filter("#include").html();
         if (options.prependResult) {
