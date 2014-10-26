@@ -27,7 +27,7 @@ Function
 ```
 
 > **Notes:**
-> #include: contains the element that you want to load  
+> \#include: contains the element that you want to load  
 > /!\ #include element itself will be dismissed  
 > body: where you'll load those elements (you can also target an "#ID" or ".style" ()but careful with this last one)).  
 
