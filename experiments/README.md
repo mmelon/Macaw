@@ -1,4 +1,4 @@
-#Welcome to my playground !
+#Macaw experiments
 
 
 *Note: All files are made entirely in Macaw, without any external app.*
