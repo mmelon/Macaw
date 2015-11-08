@@ -1,9 +1,11 @@
 #Hi
 
-Since I'm one of the moderator of the official (forum of Macaw)[forum.macaw.co] I tried to help some users of Macaw who can sometimes stuck on simple things. Macaw is best used to quick wireframes but you can use it for other things, like some prototype, even complicated ones. For that we must work around the limitations… it's a bit outside the box, Macaw loses some values but can be useuful to export a not so bad CSS.
-I noticed that lots of users found some help to understand HTML and CSS with the help of the UI of Macaw.
+Since I'm one of the moderator of the official [forum of Macaw](http://forum.macaw.co) I oftenly tried to help some users of Macaw who can sometimes stuck on simple things by giving them some example files.
+Macaw is best used to quick wireframes but you can use it for other things, like some prototype, even complicated ones. For that we must work around the limitations… it's a bit outside the box and Macaw loses some values but can be useful to export a good looking CSS file.
+I also noticed that Macaw helped a lots of users to understand HTML and CSS thanks to its awesome UI.
 
-Here, you'll find some ready to use components, example files or even templates.
+Here, you'll find some ready to use components, example files or even full templates.
 
-And if you have a specific problem, ask me directly in the forum.
+If you have a specific problem, ask me directly in the forum.
+
 Thanks!
