@@ -1,0 +1,37 @@
+.pulsr{
+      -webkit-animation: pulse 1s infinite;
+      animation: pulse 1s infinite;
+    }
+    @-webkit-keyframes pulse {
+      0% {
+        transform: scale(0.01);
+        opacity: 0.1;
+      }
+      60% {
+        transform: scale(3);
+        opacity: 1;
+        transform: rotate(45deg);
+        border-radius: 50%;
+      }
+      100% {
+        transform: scale(0.01);
+        opacity: 0.1;
+      }
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(0.01);
+        opacity: 0.1;
+      }
+      60% {
+        transform: scale(3);
+        opacity: 1;
+        transform: rotate(45deg);
+        border-radius: 50%;
+      }
+      100% {
+        transform: scale(0.01);
+        opacity: 0.1;
+      }
+    }
+    

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>hover effect</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* center figcaption */
+    .figcaption {display:table;}
+    .figcaption__txt {float:none;display:table-cell;vertical-align:middle;}
+    /* initial state */
+    .figcaption{height:100%;opacity:0;}
+    .figcaption__txt{-webkit-transform:translateY(-15px);}
+    /* hover state */
+    .thumb:hover .figcaption{opacity:1;}
+    .thumb:hover .figcaption__txt{-webkit-transform:translateY(0px);}
+    .figcaption a:hover .figcaption{opacity:0;}
+    /* others */
+    .thumb{cursor: default;}
+    </style>
+</head>
+<body class="body page-index clearfix">
+  <section class="section clearfix">
+    <div class="wrap clearfix">
+      <div class="row clearfix">
+        <div class="col3">
+          <figure class="thumb clearfix">
+            <img class="image" alt="image" src="images/4.png">
+            <div class="figcaption clearfix">
+              <div class="figcaption__txt clearfix">
+                <h2 class="figcaption--h2">Title</h2>
+                <p class="figcaption--p">Eleifend option congue nihil imperdiet doming id quod mazim placerat possim.</p>
+                <a href="#" class="figcaption--link">view more</a>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery-min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

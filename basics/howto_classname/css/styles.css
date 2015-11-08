@@ -1,0 +1,48 @@
+body {
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+.col {
+  float: left;
+  width: 50%;
+}
+
+.col .color-green,
+.col .color-red {
+  clear: both;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.color-orange {
+  background-color: orange;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.rectangle {
+  float: left;
+  width: 100%;
+  height: 250px;
+}
+
+.square {
+  float: left;
+  width: 25%;
+  height: 250px;
+}
+
+.wrappr {
+  width: 100%;
+  max-width: 960px;
+  margin: 10px auto 0;
+}

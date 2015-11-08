@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* line behind title CSS */
+    h2.line-behind {
+      display: table;
+      white-space: nowrap;
+      overflow:hidden;
+    }
+    h2.line-behind:before,
+    h2.line-behind:after {
+      border-top: 1px solid green;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.7em;
+      width: 50%;
+    }
+    h2.line-behind:before {
+      right: 15px;
+    }
+    h2.line-behind:after {
+      left: 15px;
+    }
+  </style>
+</head>
+<body class="body page-index clearfix">
+  <h2 class="line-behind">Article title</h2>
+</body>
+</html>

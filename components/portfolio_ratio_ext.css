@@ -1,0 +1,43 @@
+.wrapper{background-color: #E3E3E3}
+.shots--li {
+		display: inline-block;
+		width:19.1%;
+		height:19.1vw;
+		margin:0.45%;
+		border:none;
+		max-height:230px;
+	}
+.shots--li:hover {border:solid 5px #E3E3E3;}
+.shot--li__link {width:100%;height:100%;};
+
+@media all and (min-width: 959px) {
+	.shots--li {
+		width:19.1%;
+		height:19.1vw;
+		margin:0.45%;
+	}
+}
+
+@media all and (min-width: 723px) and (max-width: 958px) {
+	.shots--li {
+	width:24%;
+	height:24vw;
+	margin:0.5%;
+	}
+}
+
+@media all and (min-width: 481px) and (max-width: 722px) {
+	.shots--li {
+	width:31%;
+	height:31vw;
+	margin:0.75%;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.shots--li {
+	width:48%;
+	height:48vw;
+	margin:1%;
+	}
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>index</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <style>
+    /* basic -  reset */
+    .shots__txt h3, .shots__txt p{float:none;}
+    .title{width:auto;}
+    /* width thumbnail */
+    .shots{height:25vw;}
+    .shots__img{height:100%;}
+    /* center the text */
+    .table {display:table;height:101%;}
+    .tablecell {float:none;display:table-cell;vertical-align:middle;text-align:center;}
+    .title{display:inline-block;}
+
+    /* ANIMATION*/
+    /* initial state */
+    .shots__txt{opacity:0;}
+    .shots__txt--p {transform:translateY(-10px);}
+    .shots__txt--title{transform:translateY(20px);}
+    /* hover state */
+    .shots:hover .shots__txt{opacity:1}
+    .shots:hover .shots__txt *{transform:translateY(0px);}
+    
+    /* BREAKPOINTS */
+    @media all and (min-width: 960px) {
+      .shots{width:25%;height:25vw;}
+      body {font-size: 1.75em;}
+    }
+    @media all and (min-width: 701px) and (max-width: 959px) {
+      .shots{width:33.33%;height:33.33vw;}
+      body {font-size: 1.25em;}
+    }
+    @media all and (max-width: 700px) {
+      .shots{width:50%;height:50vw;}
+      body {font-size: 1em;}
+    }
+  </style>
+</head>
+<body class="body page-index clearfix">
+  <div class="works--shots clearfix">
+    <ul class="shots--ul">
+      <li class="shots">
+        <div class="shots__img clearfix">
+          <img class="image" src="images/500.jpg">
+        </div>
+        <a href="#" class="shots__txt table clearfix">
+          <div class="tablecell clearfix">
+            <div class="title halign clearfix">
+              <h3 class="shots__txt--title">Picture title</h3>
+            </div>
+            <p class="shots__txt--p">tags</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="js/jquery-min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>index</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    /* basic -  reset */
+    .shots__txt *{float:none;width:auto;}
+    /* thumbnail size (optional) */
+    .shots{height:25vw;}
+    .shots__img{height:100%;}
+    /* center the text (optional) */
+    .table {display:table;height:101%;}
+    .tablecell {float:none;display:table-cell;vertical-align:middle;text-align:center;}
+    .shots__title{display:inline-block;}
+
+    /* ANIMATION*/
+    /* initial state */
+    .shots__txt{opacity:0;}
+    .shots__txt--p {transform:translateY(15px);-moz-transform:translateY(15px);}
+    .shots__txt--h3{transform:translateY(-10px);-moz-transform:translateY(-10px);}
+    /* hover state */
+    .shots:hover .shots__txt{opacity:1}
+    .shots:hover .shots__txt *{transform:translateY(0px);-moz-transform:translateY(0px);}
+  </style>
+</head>
+<body class="body page-index clearfix">
+  <div class="shots clearfix">
+    <div class="shots__img clearfix">
+      <img class="image" src="images/500.jpg">
+    </div>
+    <a href="#" class="shots__txt table clearfix">
+      <div class="tablecell clearfix">
+        <div class="shots__title clearfix">
+          <h3 class="shots__txt--h3">Picture title</h3>
+        </div>
+        <p class="shots__txt--p">tags</p>
+      </div>
+    </a>
+  </div>
+</body>
+</html>

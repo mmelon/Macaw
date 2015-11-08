@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 16px/1.38 Arial;
+  color: #7f7f7f;
+}
+
+.article--fontface,
+.article--gfont {
+  width: 640px;
+  margin: 50px auto 0;
+  padding: 50px;
+  border-radius: 3px;
+  background-color: #efefef;
+}
+
+.content--fontface {
+  float: left;
+  clear: both;
+  width: 100%;
+  font-family: ClearSans;
+  font-weight: normal;
+  line-height: 1.38;
+  color: #7f7f7f;
+}
+
+.content--gfont {
+  float: left;
+  clear: both;
+  width: 100%;
+  line-height: 1.38;
+  color: #7f7f7f;
+}
+
+.title--fontface {
+  float: left;
+  width: 100%;
+  font: normal 38px/1.38 ClearSans-Thin;
+  color: #3e3e3e;
+}
+
+.title--gfont {
+  float: left;
+  width: 100%;
+  font-size: 38px;
+  line-height: 1.38;
+  color: #3e3e3e;
+}

@@ -1,0 +1,28 @@
+img_width = 230
+
+num_img = 5
+margin = 0.45*2
+#todo - ne prends pas en compte la marge exterieure du wrapper
+content_width_perc = 100-(num_img*margin+margin) => 94.6
+content_width_pix = img_width*num_img => 1,150
+breakpoint = 100*content_width_pix/content_width_perc=> 1,215.6448
+margin_width = ((breakpoint-content_width_pix)/num_img)=> 13.129
+img_width_perc = content_width_perc/num_img=> 18.92
+
+num_img = 4
+margin = 0.5*2
+breakpoint = 100*content_width_pix/content_width_perc=> 968.4211
+margin_width = ((breakpoint-content_width_pix)/num_img)=> 12.1053
+img_width_perc = content_width_perc/num_img=> 23.75
+
+num_img = 3
+margin = 0.65*2
+breakpoint = 100*content_width_pix/content_width_perc=> 727.8481
+margin_width = ((breakpoint-content_width_pix)/num_img)=> 12.616
+img_width_perc = content_width_perc/num_img=> 31.6
+
+num_img = 2
+margin = 1*2
+breakpoint = 100*content_width_pix/content_width_perc=> 489.3617
+margin_width = ((breakpoint-content_width_pix)/num_img)=> 14.6809
+img_width_perc = content_width_perc/num_img=> 47

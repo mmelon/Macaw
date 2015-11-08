@@ -1,0 +1,27 @@
+body {
+  background-color: #e3e3e3;
+  font: 400 16px/1.38 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+.article {
+  width: 50%;
+  margin: 20px auto 0;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(222, 222, 222);
+}
+
+.removecf {
+  float: left;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0, 0, 0);
+}

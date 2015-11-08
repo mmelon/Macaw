@@ -1,0 +1,33 @@
+body {
+  background-color: #e8e8e8;
+  font: 400 16px/1.38 Helvetica;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.paragraph {
+  float: left;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.ratio {
+  width: 25%;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background: url('../images/sky.jpg') #333333;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.title {
+  float: left;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgba(255, 255, 255, 0.5);
+}

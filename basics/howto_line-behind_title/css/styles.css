@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 36px/1.38 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+.line-behind {
+  margin: 50px auto 0;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}

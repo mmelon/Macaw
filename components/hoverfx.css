@@ -1,0 +1,27 @@
+.anim{
+      -webkit-animation: anim 1s infinite;
+      animation: anim 1s infinite;
+    }
+    @-webkit-keyframes anim {
+      0% {
+        transform: translateY(100%);
+      }
+      60% {
+        transform: translateY(0%);
+      }
+      100% {
+        transform: translateY(100%);
+      }
+    }
+    @keyframes anim {
+    	0% {
+        transform: translateY(100%);
+      }
+      60% {
+        transform: translateY(0%);
+      }
+      100% {
+        transform: translateY(100%);
+      }
+    }
+    
