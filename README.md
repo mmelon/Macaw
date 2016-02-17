@@ -1,5 +1,7 @@
 #Hi
 
+[![Join the chat at https://gitter.im/cockatoos/Macaw](https://badges.gitter.im/cockatoos/Macaw.svg)](https://gitter.im/cockatoos/Macaw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Since I'm one of the moderator of the official [forum of Macaw](http://forum.macaw.co) I oftenly tried to help some users of Macaw who can sometimes stuck on simple things by giving them some example files.
 It's because [Macaw](http://macaw.co) looks like a graphic app but the element you draw inside of it act like web objects, and that can be surprising for the new designer who's trying to design its first website by himself.
 
