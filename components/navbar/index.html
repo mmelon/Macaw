@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>toggle</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    .navbar{margin-bottom:10px;}
+    .navbar,.navbar__menu-item,.navbar__link{width:auto;}
+    .navbar__menu-item{margin-left:4px;}
+    @media(max-width: 640px) {
+      .navbar{padding-left:10px;padding-right:10px;}
+      .navbar__menu-item{margin-bottom:4px;margin-left:0px;}
+    }
+  </style>
+</head>
+<body class="body page-index clearfix">
+  <header class="header">
+    <div class="wrapper clearfix">
+      <div class="toggle-menu clearfix js-toggle-menu">
+        <a class="toggle-icon js-toggle_icon" href="#">menu</a>
+      </div>
+      <ul class="navbar clearfix js-navbar">
+        <li class="navbar__menu-item clearfix">
+          <a href="#home" class="navbar__link">Home</a>
+        </li>
+      </ul>
+      <section class="content"></section>
+    </div>
+  </header>
+
+  <script src="js/jquery-min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

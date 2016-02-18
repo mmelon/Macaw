@@ -1,0 +1,69 @@
+<h1>Known issues</h1>
+
+<br>
+<b>Preview error (-302)</b>
+Preview use a really poor and basic browser so some external functions won't work.
+It does not work in the preview window of Macaw. Open your page in a browser and check it there. That should work.
+
+
+<b>Stuck on publishing</b>
+If Macaw seems to stuck when you're publishing your work it can says that you didn't follow those basic rules:
+- remember that Macaw isn't a graphic app
+- learn some basic HTML/CSS
+- group your elements as needed
+- name them correctly (<a href="http://forum.macaw.co/discussion/comment/6231/#Comment_6267">help</a>)
+- publish regularly and do some change if needed
+- read: http://forum.macaw.co/discussion/comment/7095/#Comment_7095
+
+<b>Why my font hover doesn't work?</b>
+Often
+Macaw doesn't ask Google font for the right hover weight:
+<code>http://fonts.googleapis.com/css?family=Oswald:300</code>
+whereas it should be:
+<code>http://fonts.googleapis.com/css?family=Oswald:300,400</code>
+
+Problem, when you ask for a bolder font without the right font face file means you ask the browser to apply a <b>faux bold</b> (<a href="http://alistapart.com/article/say-no-to-faux-bold">help</a>).
+In your case, Oswald 300 and Oswald 400 is understood by your browser as Oswald regular font weight (<a href="http://www.w3.org/TR/CSS21/fonts.html#font-boldness">help</a>)
+
+Now, you can bypass this “limitation” by asking google for the right font weight just by adding:
+<code><link href="http://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet" type="text/css"></code>
+in your Head & Tail section (or just create a new text object in your design with the right font weight on its normal state).
+
+
+<b>Float right bug</b>
+<img src="http://cl.ly/YGK8/macaw_float-right.png" alt="macaw float right">
+Macaw doesn't handle very well the float right. It's known and we can't do anything at the moment, aside sending bug report.
+
+<b>Float stuck</b>
+Happens when you're mixing different static positions on the same level. Try to stick to one position and group your elements when you want to change it.
+Note, mixing static and absolute is not a problem here (only for static left/center/right).
+
+<b>No interface icons shown on windows</b>
+http://www.brianbar.net/2015/01/macaw-missing-tool-icons/
+
+<b>UI's resolution problem on windows</b> by <a href="https://twitter.com/Jago_Kosolosky">Jago Kosolosky</a>
+http://superuser.com/questions/610534/resolution-of-certain-programs-appear-differently-on-the-same-screen/722526#722526
+
+<b>Outline tab going mad</b>
+https://twitter.com/webmastercorey/status/545632737244491776
+In ths example he just have drag'n drop div.center on section.blades for repairing the file.
+
+<b>Optimize image uncheck</b>
+Once you've checked this option and cropped (double click) one of your image, you won't be able to disable it unless you reset that image.
+
+Generate Optimized Images option allows you to <b>crop</b> your image and to generate a new image for you.
+
+Now in your case, you already used that option on some img and on many breakpoints so you can't uncheck it.
+For that you must reset each image on each breakpoint where you used that option (see your image folder for pointing them out for you).
+When you'll reset them, it's totally normal that some of them will break  your design. Readjust your design by resizing your images.
+Once you've done that you'll be able tu uncheck that option.
+
+Reminder:
+- Double click on an image = cropping (if the Generate Optimized Images option is checked).
+- Resizing your image by dragging its corner = set a size for you image only in your CSS.
+
+<img src="https://s3-eu-west-1.amazonaws.com/0x756e696b6f.static/macaw_forum/howto_reset-image-img.png" alt="screen capture - how to reset your image">
+<figcaption>Reset your image</figcaption>
+
+<b>Non-retina img unsharp</b>
+http://forum.macaw.co/discussion/1527/pngs-look-pixelated-on-non-retina-displays/p1#Comment_5773

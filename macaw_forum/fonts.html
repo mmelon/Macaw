@@ -1,0 +1,34 @@
+<u><b>HACKS #2</b></u>
+
+<strong>Using web fonts within Macaw</strong>
+
+1. <b>from your favorites type foundries</b>.
+Example: http://ngenty.com/macaw/webfonts/manual/ - <a href="http://cl.ly/2Y0q2v0H3d1j">file</a>
+<i>Note: zip includes the web font folder (Outside the published folder because Macaw rewrites it when publishing).</i>
+Font used: Clear Sans 1.00 (download it <a href="https://01.org/clear-sans/downloads/2013/clear-sans-1.00">here</a>).
+
+2. <b>from google fonts</b> (and not already installed in Macaw)
+Example: http://ngenty.com/macaw/webfonts/google/ - <a href="http://cl.ly/0p0F3E3g3R29">file</a>
+<i>Trick here is to change the font-family name because Macaw use the full name (family + weight)</i>
+Font used: Pacifico (you can download it <a href="http://www.google.com/fonts#UsePlace:use/Collection:Pacifico">here</a>).
+
+3. <b>from an opentype file</b> (.otf or .ttf).
+Use the webfont generator from Fontsquirrel: http://www.fontsquirrel.com/tools/webfont-generator.
+<i>Note: Read the agreement because fonts are subjects to copyright, so be sure to have the right to use them on your website. If not, buy a proper license.</i>
+After that, use them like in my first example.
+
+Note: If you see this in Macaw:
+<img src="http://cl.ly/image/1T3e1P1L2E2c/macaw_webfonts_lines.png" alt="disable font">
+Macaw requires that you install the typo in your computer <u>before using it</u>.
+To make it simple, Macaw needs a system font and your users needs a web font (yeah it's sounds dumb, i know).
+All you have to do is using the system font inside Macaw, then manually attach the web font to your page (inside your “head & tail”), like this:
+<code><style type="text/css" media="screen">
+ @font-face {
+  font-family: 'ClearSans';
+  src: url('../fonts/ClearSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ClearSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ClearSans-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/ClearSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ClearSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}</style></code>
+<i>Tips: after using the system font with Macaw, publish your work and preview your css, Macaw uses sometimes the full font name for the font-family (font-family + weight). This is this name you need to use in your head & tail code.</i>

@@ -1,0 +1,53 @@
+@iamsamparody Hi,
+I don't know your code level so I will assume you're a learner.
+
+1. Be sure to understand a basic HTML <u>AND</u> CSS (you can find lots of useful links here: http://forum.macaw.co/discussion/1135/tips-tricks#Comment_3602)
+
+2. Be sure to understand how Macaw works by reading this book http://peachpit.com/macaw (Save 35% with code MACAW)
+
+3. Now for CSS, apply those simple rules when you're working with Macaw:
+<blockquote style="background:#EFEFEF;padding:5px">Don't let Macaw name your elements by itself, name them according to a simple logic: BEM.
+http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/</blockquote>
+<i>Like that your favorite front-dev would be able to read/optimize it instead of rewriting it entirely.</i>
+<blockquote style="background:#EFEFEF;padding:5px">Check your code each time you're publishing it, it will give you some precious information.
+Example: Macaw writes the CSS in a particular order: Basic Style(Alphabetical)/Your Style(Alphabetical)/Automatic Renaming Style(Macaw's). This last part shouldn't exist if you have done your job!</blockquote>
+<blockquote style="background:#EFEFEF;padding:5px">Stay simple and logic! Especially if your site has multiple pages… . If you want to reuse some elements they must have a same name and style (if one property is different Macaw will create a new style for you.</blockquote>
+Another little tip for your naming rules,
+- you can use multiple style names (2max.) if you want, but Macaw doesn't handle them very well. I mean sometimes it understands… sometimes not.
+- tell your developer when you wanted to use a pseudo-element by using _after/_before. Macaw doesn't handle them well (still experimental).
+
+<hr>
+Now, here are my settings/workflow for having usable CSS file
+
+<u><b>My Settings</b></u> (Shift+CMD+P):
+
+<b>Pages</b>:
+[X] Consolidate Page Styles (for a multiple page website)
+
+<b>Styles</b>:
+[X] Consolidate Style
+[X] Shorthand Properties
+<span style="color:#6A6A6A">[ &nbsp;] Tag Selectors</span>
+<span style="color:#6A6A6A">[ &nbsp;] Advanced Selectors</span>
+<span style="color:#6A6A6A">[ &nbsp;] Trim Whitespace</span>
+[X] Add Browser Prefixes  (perhaps your front-dev will ask you to deactivate it - /!\ in that case watch out the preview mode)
+
+<b>Grids</b>:
+<span style="color:#6A6A6A">[ &nbsp;] Publish Grids</span>
+
+<b>Images</b>:
+<span style="color:#6A6A6A">[ &nbsp;] Generated Optimized Images</span>
+
+<b>Remote Preview</b>
+[X] Enable Remote Preview
+
+<u><b>My Workflow</b></u>:
+I'm using this useful snippet for creating some dynamic elements on my page: http://forum.macaw.co/discussion/1500/trick-include-for-macaw-insert-the-content-of-one-file-into-another-one
+
+Like that I can design my navigation on one page, my contact form/footer/etc. on another. After that I build my pages around their content without redesigning all of the different blocks (note, there is always some negative points, but it works).
+
+Then I import my work in some front dev tool like Hammer/Mixture/etc. and optimize/enhance it on code editor… no need if you have the help of a front-dev.
+Your CSS is already good, your HTML too (without the whole HEAD code). You can ask your dev if he will agree to work with some file like that… ;)
+
+I hope this little post would help you in your work.
+Let me know and don't hesitate to show us your nice looking site.

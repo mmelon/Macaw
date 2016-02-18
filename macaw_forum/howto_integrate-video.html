@@ -1,0 +1,17 @@
+@Mithrir Here's a really basic example:
+1. create a new embed element (M), name it div<b>.video</b>
+2. edit its content:
+<code><video controls width="500">
+	<source src="../video/yourvideo.mp4" type="video/mp4">
+	<source src="../video/yourvideo.webm" type="video/webm">
+	<source src="../video/yourvideo.ogv" type="video/ogg; codecs=theora, vorbis">
+</video></code>
+3. now, you just need to correct the height in the H&T.
+<code><style>
+	video, .video{height:auto;}
+</style></code>
+
+<i>Note, <b>../video/</b> means that your <b>video</b> folder is at the same level as your <b>.mcw</b>.
+Now because your file is outside the build folder, Macaw won't load your file in the preview or in the remote preview, you have to open your html file manually to see the result.</i>
+
+#video

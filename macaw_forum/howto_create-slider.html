@@ -1,0 +1,19 @@
+:)) sorry @DharmaNode I just didn't answer your question at all… my bad, I thought about another problem.
+
+About this slider, the only thing important in this tutorial is to have:
+_ 3 <u>links</u> (or more) with a variable name (like <code>discoverButton</code>), variable name that you'll use in your script,
+_ a <u>.screen</u> container containing a <u>.screens</u> container containing 3 (or more) images.
+
+/!\ .screen must have the width of one of your img and a hidden overflow
+/!\ .screens must have the width of 3* of your img plus a variable name ('<code>screens</code>')
+/!\ all of your container size must be in px
+
+I joined you an example of this slide: https://github.com/ngenty/Macaw-Playground/raw/master/00_Macaw-forum-examples/image_slideshow.mcw
+
+
+----------------------------
+
+change directions:
+For the size change: <code>var targetX = -300 * e.data.index;</code> -300 is the width in this example
+and for the direction change <code>$screens.css('left', targetX);</code> change left by top (and -300 will be for the height)
+/!\ And don't forget to adapt all your differents size!

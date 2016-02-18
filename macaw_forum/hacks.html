@@ -1,0 +1,97 @@
+<u><b>HACKS</b></u>
+
+
+<i><b>Memo:</b> i’m talking a lot of the <b>“Head & Tail”</b> (H&D) section here. To access it, press <b>SHIFT+CMD+P</b>b> or <b>menu/files/publish settings</b> then go to the "Head & Tail” tab.
+The H&D section allows you to add your own CSS or Javascript.</i>
+
+Example, link a CSS file:
+<code><link rel="stylesheet" type="text/css" media="all" href="../style.css"></code>
+<i><u>Note</u> in this case, the CSS file is at the same level as your .mcw. The preview and the remote preview won't load this file.</i>
+
+Another example, embed CSS:
+
+<code><style type="text/css" media="screen">
+  html, body {
+    height: 100%;
+  }
+  .yourclass{
+  	height:auto;
+  }
+</style></code>
+
+<i><b>/!\</b> because of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">CSS Specificity</a>, embed or linked CSS will override Macaw's style'</i>
+
+
+<hr>
+
+
+<b style="color:green;">NEW</b> . <b>Trick - clone/duplicate your elements easily in Macaw</b>
+More details <a href="http://forum.macaw.co/discussion/1761/how-to-duplicate-my-element-easily-in-macaw-snippet-example-file">here</a>.
+
+
+
+<b>Trick - #include for Macaw (insert the content of one file into another one).</b>
+<img src="http://cl.ly/YEsS/macaw_include_tipstricks.png" alt="macaw interface">
+More details <a href="http://forum.macaw.co/discussion/1500/trick-include-for-macaw-insert-the-content-of-one-file-into-another-one?new=1">here</a>.
+
+
+
+<b>Snippet - Smooth scrolling with jquery (with upd URL).</b>
+open your Script panel and add this code:
+<code>var $root = $('html, body');
+$('a').click(function() {
+    var href = $.attr(this, 'href');
+    $root.animate({
+        scrollTop: $(href).offset().top
+    }, 500, function () {
+        window.location.hash = href;
+    });
+    return false;
+});</code>
+
+
+
+<b>Font awesome</b>
+First, be sure to install font awesome to your system (win or osx) & add <code><link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"></code> to your HTML head (publish settings/head & tail).
+Then, you can now select your “Font Awesome” font (system font tab) and copy and paste any icons you need from http://fortawesome.github.io/Font-Awesome/icons/
+
+
+
+<b>Columns</b>
+Name your div's class <code>your-class</code> & add this to your head & tail properties:
+<code>.your-class {
+  padding: 1em;
+  -moz-column-count: 3;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1em;
+  column-count: 3;
+  column-gap: 1em;
+}</code>
+note: “column-count” is the number of column you want and “gap” is the space between your columns
+
+
+
+<b>Drop Caps</b> by CSS-Tricks - <a href="http://css-tricks.com/snippets/css/drop-caps/">link</a>
+Once you add your paragraph created, add this code to your “Head & Tail”:
+<code>p:first-child:first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }</code>
+<i><b>Note:</b> this code will be applied to every <code>p</code> element. If you want to apply it only once, target it.</i>
+
+
+
+<b>favicon</b>
+Head & Tail section, add:
+<code><link rel="shortcut icon" href="/favicon.ico"></code> and place a favicon to the root of your website.
+<i><b>Note:</b>Don’t forget that a favicon is just a renamed gif.</i>
+
+
+
+<b>Working with external Javascript</b>
+Same as adding a style:
+Add code in your “Head & Tail”
+<code><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script></code>
+And follow the instructions from the .js creator.
+
+<i><b>Note:</b> Macaw is not case sensitive, so be aware when you're using external js.</i>
+
+/!\ As @jparkerweb has noticed, sometimes, the js link will be given without the <code>http:</code>. Useful but source of error. If you test your file locally, the link will be referring to <code>file://</code>, a file in your computer.

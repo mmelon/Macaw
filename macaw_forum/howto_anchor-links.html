@@ -1,0 +1,59 @@
+@zander
+Take a look at my file: http://cl.ly/2h0C1V1d343I
+<u>Explanation:</u>
+1_ I made a top menu, with 3 links, each link targets an #ID (write <code>#your-ID</code> inside the "LINKS” input.
+2_ I made 3 containers, each container has a <code>$var-name</code>
+3_ Inside the Script panel (F8), you write:
+
+<code>$var-name('id','#your-ID');</code>
+
+<u>Test it:</u>
+Your links now targets your anchor.
+
+<hr>
+
+<u>Smooth scrolling</u>
+Open your Script panel and add this code:
+
+<code>
+$(document).ready(function() {
+$('a[href^="#"]').click(function() {
+var target = $(this.hash);
+if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+if (target.length == 0) target = $('html');
+$('html, body').animate({ scrollTop: target.offset().top }, 500, 'swing');
+return false;
+});
+});</code>
+
+That's all.
+But this it only a temporary solution and I hope the team will add some real ID soon.@zander
+Take a look at my file: http://cl.ly/2h0C1V1d343I
+<u>Explanation:</u>
+1_ I made a top menu, with 3 links, each link targets an #ID (write <code>#your-ID</code> inside the "LINKS” input.
+2_ I made 3 containers, each container has a <code>$var-name</code>
+3_ Inside the Script panel (F8), you write:
+
+<code>$var-name('id','#your-ID');</code>
+
+<u>Test it:</u>
+Your links now targets your anchor.
+
+<hr>
+
+<u>Smooth scrolling</u>
+Open your Script panel and add this code:
+
+<code>
+$(document).ready(function() {
+$('a[href^="#"]').click(function() {
+var target = $(this.hash);
+if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+if (target.length == 0) target = $('html');
+$('html, body').animate({ scrollTop: target.offset().top }, 500, 'swing');
+return false;
+});
+});</code>
+
+That's all.
+But this it only a temporary solution and I hope the team will add some real ID soon.

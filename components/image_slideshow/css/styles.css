@@ -1,0 +1,83 @@
+body {
+  background-color: #efefef;
+  font-size: 16px;
+}
+
+.carousel {
+  width: 400px;
+  height: 440px;
+}
+
+.index-nav {
+  width: 60%;
+  margin: 20px auto 0;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.link {
+  display: block;
+  float: left;
+  width: 100%;
+  font: 300 32px/1.38 'Open Sans';
+  color: rgb(0, 0, 0);
+}
+
+.link-back {
+  display: block;
+  width: 400px;
+  margin: 10px auto 0;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.responsive {
+  width: 70%;
+  max-width: 800px;
+  height: 400px;
+}
+
+.slider {
+  margin: 20px auto 0;
+  background-color: #ffffff;
+  overflow: visible;
+}
+
+.link-2,
+.link-3 {
+  clear: both;
+}
+
+.slider-3 {
+  width: 400px;
+  height: 400px;
+}
+
+.link em {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: inherit;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}

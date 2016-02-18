@@ -1,0 +1,28 @@
+@Computor you can embed some CSS by yourself to add the effect you want:
+Create a title, name it <b>h2.line-behind</b>
+Add the CSS to your Head&Tail:
+
+<code>  <style>
+    h2.line-behind {
+      display: table;
+      white-space: nowrap;
+      overflow:hidden;
+    }
+    h2.line-behind:before,
+    h2.line-behind:after {
+      border-top: 1px solid green;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.7em;
+      width: 50%;
+    }
+    h2.line-behind:before {
+      right: 15px;
+    }
+    h2.line-behind:after {
+      left: 15px;
+    }
+  </style></code>
+
+Example file: http://cl.ly/dZ2B

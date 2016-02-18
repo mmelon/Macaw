@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2015 by anonymous (http://jsbin.com/wobexafati/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
+  <style>
+    html,body{margin:0;}
+    .homepage-hero-module {
+      border-right: none;
+      border-left: none;
+      position: relative;
+    }
+    .no-video .video-container video,
+    .touch .video-container video {
+      display: none;
+    }
+    .no-video .video-container .poster,
+    .touch .video-container .poster {
+      display: block !important;
+    }
+    .video-container {
+      position: relative;
+      bottom: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+    .video-container .poster img {
+      width: 100%;
+      bottom: 0;
+      position: absolute;
+    }
+    .video-container .filter {
+      z-index: 100;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.4);
+      width: 100%;
+    }
+    .video-container video {
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+    }
+    .video-container video.fillWidth {
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="homepage-hero-module">
+    <div class="video-container">
+      <div class="filter"></div>
+      <video autoplay loop class="fillWidth">
+        <source src="../../assets/video/header_bigcity.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        <source src="../../assets/video/header_bigcity.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+      </video>
+      <div class="poster hidden">
+        <img src="../../assets/img/header_bigcity.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script type="text/javascript" src="video.js"></script>
+</body>
+</html>

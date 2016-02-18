@@ -1,0 +1,48 @@
+E.g. make a horisontal nav with some < li > elements and draw a submenu <ul> within on of these < li >'s. Give the < li > containing the sub < ul > the variable name of: subNavTrigger
+
+Then edit the sub < ul > that should reveal it self when hovering your trigger and fill it with the elements you need and set variable name to subNav. if you want it to reveal it self on top of everything else, set it to position Absolute.
+
+Now add this script by pressing F8
+
+// SUB NAV HOVER REVEAL
+
+// Hide the subNav container initially
+$subNav.css({
+  'display' : 'none'
+});
+
+//Show subNav when subNavTrigger is hovered
+$subNavTrigger.hover(function() {
+	$subNav.slideDown();
+}, function() {
+	$subNav.slideUp('fast');
+});
+
+Example:
+
+http://screencast.com/t/u0yAgHQGNmC
+
+Structure in Macaw:
+
+http://imgur.com/hRxm48m
+
+Obviously many variations can be made from this simple script. Have fun :)
+
+-----------------------
+
+
+onclick:
+@agentfarrell
+
+There are different ways to do this. Using :visible could be one way:
+
+$subNavTrigger.click( function() {
+  // If nav is not visible, show it
+  if (!$subNav.is(':visible')) {
+    $subNav.slideDown();
+  }
+  // If nav is visible, hide it
+  else {
+    $subNav.slideUp('fast');
+  }
+});

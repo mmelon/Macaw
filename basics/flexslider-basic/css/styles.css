@@ -1,0 +1,17 @@
+body {
+  background-color: #efefef;
+  font-size: 1em;
+}
+
+.content {
+  float: left;
+  width: 100%;
+}
+
+.slider {
+  width: 50%;
+  height: 440px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  overflow: visible;
+}

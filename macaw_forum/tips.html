@@ -1,0 +1,128 @@
+<u><b>TIPS</b></u>
+
+
+<b>Using the Select Tool and the Direct Select Tool at the same time.</b>
+Rather than switch between these 2 essential selecting function: the Select Tool(V) (selects objects at your actual root) and the Direct Select Tool(A) (selects objects inside others), you can by pressing <b>CMD + click</b> make a quick direct select tool without pressing “A”.
+And by pressing <b>SHIFT+CMD+click</b> you can make several direct selections.
+
+
+
+<b>Easy way to sort your elements</b> (horizontally or vertically).
+You just have to select them <b>in the order you want</b>, then align them with the align and space tool.
+Example, horizontal...
+<img src="http://cl.ly/WxNR/sort_tricks.gif" alt="align horizontally">
+
+...and vertical.
+<img src="http://cl.ly/WxJh/sort_tricks-vertical.gif" alt="align vertically">
+
+
+
+<b>Cut, copy, and paste elements between projects.</b>
+<img src="http://cl.ly/Wxol/cutcopypaste.png" alt="cut, copy, and paste">
+Select and copy (or cut) the element you want to copy in your open project, then switch to the project where you want to paste this element. Paste it.
+Switch between projects for just copying and pasting is surely not a practical way to do it but it works.
+An alert window asking you if you want to create breakpoint will appear if the origin of the file has a larger breakpoint than the actual:
+<img src="http://cl.ly/WxjF/cutcopypaste_alert.png" alt="cut, copy, and paste alert">
+<i>Elements can be pasted without breakpoint info by using the “Edit > Paste Simple” command</i>, or <b>SHIFT + CMD + V</b>
+<i><b>Note:</b> paste function works only once in Macaw (don't know why).</i>
+
+
+
+<b>Use multiple classname within Macaw</b>
+Macaw can handle multiple classname.
+Just use a <b>simple dot</b>, like this:
+<img src="http://cl.ly/WlSj/multiple_classname.png" alt="multiple classname, soon in Schonne's book :))"></img>
+Now you can work with your favorite framework.
+
+
+
+<b>Applying the same style in different breakpoint:</b>
+hit ⌘ (cmd) or ctrl (win) + the properties you want to see applying everywhere.
+<img src="http://cl.ly/image/3q033D0X182N/set-all-properties.png" alt="img" alt="style propagation">
+And it’s working for any element, even the color.
+
+
+
+<b>Focus</b>
+You can center any element on your screen, by clicking on its icon.
+<img src="http://cl.ly/image/0G2F1z1u2A21/focus.png" alt="focus">
+
+
+
+<b>Let Macaw do the math for you !</b> by @Chellman - <a href="http://forum.macaw.co/discussion/1135/tips-tricks#Comment_5312">link</a>
+Macaw's text fields will often do basic arithmetic for you. Let's say you want to to vertically center 12px text in a 40px tall box. Enter "40/12" in the line-height box, and Macaw will change it into the right value.
+<img src="http://cl.ly/Y41X/macaw_math.gif" alt="do the math for me!">
+
+
+
+<b>Draw containers on top of others</b> by Adam - <a href="http://forum.macaw.co/discussion/1218/v1-0-12-released#Comment_4095">link</a>
+You can draw containers on top of other elements without adding the other elements to the container by holding the cmd (osx) or ctrl (win) key while drawing the element.
+
+
+
+<b>Rename a page</b>
+<img src="http://cl.ly/WHE3/rename.png" alt="rename pages">
+right clic or (ctrl + clic) : Rename Page (or double click on the name)
+
+
+
+<b>Delete Swatches</b>
+<img src="http://cl.ly/image/1E1b3l080J0i/delete-swatches.png" alt="delete swatches">
+right clic or (ctrl + clic) : delete swatch
+<b>or Global Style</b>
+Same, right clic or (ctrl + clic) : delete style
+
+
+
+<b>Advanced text options</b> (Inspector panel)
+Some features seem a bit hidden, like the advanced typography tab.
+<img src="http://cl.ly/WO0f/typography_advanced.gif" alt="typography advanced">
+The icon tells you if the window has advanced functionalities:
+<img src="http://cl.ly/WOGa/tabs.png" alt="tabs icon">
+
+
+
+<b>The “garage” page</b> by @zander <a href="http://forum.macaw.co/discussion/comment/3378/#Comment_3376">link</a>
+<blockquote><i>“I started using a extra page(s) as a workshop or a garage, just for creating elements like a header or forms or buttons or any combined text/ image containers. No more designing components in the page where you need it. Then save them as component. Then carefully mount it into the layout where it is supposed to be.”</i></blockquote>
+
+<i><b>Note:</b> Personally i just copy / paste my element, without transforming it as component. Really practical when you need to add a new element to your page without breaking all your previous hard work.</i>
+
+
+
+<b>Refresh your preview page</b>
+For testing purposes (especially if you have some onload code), create an empty page just for toggling on it when you want to refresh your primary page.
+
+
+
+<b>Create a list</b> by @uniko - <a href"http://forum.macaw.co/discussion/1758/hidden-window-and-list-text-help#Comment_7632">link</a> and <a href="http://cl.ly/dUXf">file</a>
+<b>1.</b> create your list with the <b>Embed Tool (M)</b>:
+
+<code>   <li>banana</li>
+    <li>apple</li>
+    <li>cherry</li>
+    <li>strawberry</li></code>
+
+<b>2.</b> name it <b>ul.list--ul</b>
+
+<b>3.</b> add some CSS in your H&T
+
+<code><style>
+    .list--ul{height:auto;}
+    .list--ul li{width:auto;list-style-type:circle;list-style-position:inside;margin-left:10px;}
+</style></code>
+
+
+
+<b>Links and button</b>
+Use button, only when you’re designing a form. Everywhere else, use a <code><a href="#"></code> link
+
+
+
+<b>About the .mcw</b> by @brandon
+The <b>.mcw</b> files are a zipped folder, it’s composed with a json file project and all the used (and sometimes unused) assets.
+
+
+
+<b>Essential Shortcuts</b>
+Inside Macaw, Help / Keyboard Shortcuts.
+Or online: http://claytonfarr.com/macaw/keyboard-shortcuts.html for more shortcuts

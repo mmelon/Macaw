@@ -1,0 +1,31 @@
+<a href="http://flexslider.woothemes.com/">Flexslider</a> I think you just need to correct the height with a simple:
+<code><style>
+    .slider{height:auto;}
+</style></code>
+Now you can put any width you want, even in %, the script will do the rest for you.
+Don't forget that your images define the size of your slider too. If I remember correctly you can add some more parameters like overflow to keep the ratio you want… see the flexslider docs or <a href="https://github.com/woothemes/FlexSlider/">repo</a> for more.
+
+-------------------------------------------------
+
+@VanDongen you can control the speed for each instance of the flexslider but I don't know if you can control the speed for each one of your slide… probably but I don't know how.
+
+For defining multiple instance, just change the name of the flexslider on each embed element:
+<code><div class="flexslider_01">…</code>
+<code><div class="flexslider_02">…</code>
+
+and modify them in the js:
+<code>// Multiple slider
+  $(window).load(function() {
+    $('.flexslider_01').flexslider({
+      animation: 'slide',
+      controlNav: false,
+      slideshowSpeed:6000
+    });
+    $('.flexslider_02').flexslider({
+      animation: 'slide',
+      controlNav:false,
+      slideshowSpeed:3000
+    });
+  });</code>
+
+Example file: http://cl.ly/eZWc

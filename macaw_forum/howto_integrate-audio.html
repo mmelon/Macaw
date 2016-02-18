@@ -1,0 +1,22 @@
+Since this is working - similar as it does in plain HTML5 - I thought I would give it a try with audio.
+
+I added a folder "audio", which contains a file "artist - song.mp3", next to the existing "video" folder.
+Next I created a new embed element div.audio and added the following content:
+
+ <code><audio controls>
+  <source src="..audio/artist - song.mp3"  type="audio/mp3">
+
+ </audio></code>
+
+After publishing the page the (grey) audio controls appear in the browser but nothing can be played. While the video's play fine...
+
+
+The audio can be played if I place the specific audio file in the folder that contains the HTML file and if I change the code to:
+
+<code><audio controls>
+  <source src="artist - song.mp3"  type="audio/mp3">
+
+ </audio></code>
+
+
+Question: Why can't audio files be treated the same way as video files, with their own folder at the .mcw level...  or am I doing something terribly wrong?  TIA...

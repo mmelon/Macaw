@@ -1,0 +1,137 @@
+<h1>How tos?</h1>
+
+<br>
+<b>Correct approach to Macaw</b>
+http://forum.macaw.co/discussion/comment/6231/#Comment_6231
+Quick analyse of a file ( http://forum.macaw.co/discussion/comment/6874/#Comment_6874 )
+
+<b>If you have to build a whole website using only Macaw… </b><i>(even if it's not it's main purpose)</i>
+1. draw something first (on paper) it will give you a structure a list of element you need to realize,
+2. realize a quick wireframe inside Macaw just to know how many element you have to design and how they will react together (with your breakpoints). No images, no details only the essential: the structure. The goal here is to determine what sizes your element should have and how they will react together.
+3. prepare all your differents assets (img, svg, font), name them and optimise them,
+4. create a new file (with your wireframe in mind or open in a browser),
+5. draw the structure of your final HTML (header, section, articles, footer, etc.)
+6. draw each one of your element in separate pages (no repetition means better CSS), the wireframe should have gave you all the info you need,
+7. if you have some embed CSS you should integrate them inside your main CSS file,
+8. take your publishing files and merge them for building your final website,
+9. repeat, modify manually if you have to (yeah, in a text editor),
+10. That's it! You've build a webpage with Macaw!
+You should normally make some minor adjustments but you can live without them. Anyway, it's a good thing to test your website in some great online tools like https://developers.google.com/speed/pagespeed/insights/ or http://validator.w3.org/ They will give you lots of precious informations for free!
+<i>11. Optional - You can post your creation <a href="http://forum.macaw.co/discussion/comment/6924">here</a></i>
+
+<u>Important notes</u>:
+- the greatest thing in Macaw is the “consolidate page styles”. Use it intelligently and you will have a great CSS file…
+- … but for that you must name all your elements (read “How to correctly name my elements” below),
+- don't repeat anything in your page, that's not the purpose of HTML anyway
+- stay simple, use static positioning only, absolute is a last case scenario,
+- build your page bit by bit (be patient and rigorous) you'll gain lots of your time at the end,
+- test you page at each step, the dev tools of your browser is your best friend and it will tell you your mistakes and where the adjustments should be made.
+
+<b>How to correctly name my elements?</b>
+http://forum.macaw.co/discussion/comment/6231/#Comment_6267
+
+<b>How to import my own external CSS file?</b>
+Link your external CSS file in your header (<a href="http://forum.macaw.co/discussion/1135/tips-tricks#Comment_3600">help</a>).
+
+<code><head>
+  <!-- <title> and other generated code will appear above your static head code. -->
+  <link rel="stylesheet" type="text/css" media="all" href="http://url/your.css">
+  …</code>
+
+<b>How to import my own external Javascript file?</b>
+Link your external javascript file in your header (help).
+<code>
+  …
+  <!-- Page content will appear above your static tail code. This is a good place for analytics code, etc. -->
+  <script src="http://url/your.js"></script>
+</body></code>
+
+<b>How to import components or objects from another file?</b>
+Copy the element you want in your open project, then open your target file and paste it.
+Switching between projects is not the best way to reuse your elements but it’ll do the job.
+<img src="https://s3-eu-west-1.amazonaws.com/0x756e696b6f.static/macaw_forum/faq_cut-copy-paste.png" alt="how to copy paste between 2 projects">
+Note: depending on your breakpoints, an alert window will ask you if you want to create breakpoint if the origin of the file has a larger one than the actual.
+<img src="https://s3-eu-west-1.amazonaws.com/0x756e696b6f.static/macaw_forum/faq_cut-copy-paste-alert.png" alt="how to copy paste between 2 projects - alert window">
+You can bypass this alert by using the “Edit > Paste Simple" command, or SHIFT + CMD + V.
+Note: the paste function works only once.
+
+<b>How to use an external webfonts?</b>
+http://forum.macaw.co/discussion/comment/6501/#Comment_6516
+
+<b>How to use FontAwesome?</b>
+http://forum.macaw.co/discussion/comment/5990
+
+<b>How to build a smooth go to anchor navigation (#ID's)?</b>
+http://forum.macaw.co/discussion/comment/3516/#Comment_3516
+
+<b>How to open a link in a new window or tab? (target=_blank)</b>
+http://forum.macaw.co/discussion/comment/6242/#Comment_6230
+
+<b>How to build a php form</b>
+http://forum.macaw.co/discussion/1531/mail-form-tutorial-ready-made-mail-form-and-php-script-to-download#latest
+
+<b>How to build a slider</b>
+http://forum.macaw.co/discussion/comment/6343/#Comment_6343
+
+<b>How to integrate an external slideshow?</b>
+http://forum.macaw.co/discussion/668/navigation-bar#Comment_6873
+
+<b>How to work with lists ul, ol, dl?</b>
+http://forum.macaw.co/discussion/1758/hidden-window-and-list-text-help#Comment_7632
+
+<b>How to build a roll-over menu?</b>
+http://forum.macaw.co/discussion/1261/rollover-menu
+
+<b>How to add a line on each side of a text (for title)</b>
+http://forum.macaw.co/discussion/1764/how-to-add-line-behind-text#Comment_7640
+
+<b>How to build a sticky footer?</b>
+http://forum.macaw.co/discussion/comment/5991/#Comment_5991
+
+<b>How to build a mobile nav bar (responsive nav)?</b>
+http://forum.macaw.co/discussion/668/navigation-bar#Comment_6873
+
+<b>How to work with sprites?</b>
+http://forum.macaw.co/discussion/comment/5253/#Comment_5253
+
+<b>How to work with tables?</b>
+http://forum.macaw.co/discussion/1353/tables-generator
+Embed generated code by http://www.tablesgenerator.com/html_tables
+
+<b>How to use px and % at the same time?</b>
+Use % for sizing your element and use margin or padding for integrating a px sized object inside of it.
+http://forum.macaw.co/discussion/comment/6655/#Comment_6655
+
+<b>What are the best settings?</b> (see Getting started in Macaw)
+http://forum.macaw.co/discussion/comment/6267/#Comment_6267
+
+<b>Outline tab = HTML hierarchy?</b>
+http://forum.macaw.co/discussion/comment/6841/#Comment_6841
+
+<b>How to update one of my image library?</b>
+http://forum.macaw.co/discussion/comment/5510/#Comment_5510 (read brandon’s comment)
+
+<b>How to update my library?</b>
+http://forum.macaw.co/discussion/comment/6951/#Comment_6951
+
+<b>How to extend the length of my page?</b>
+You don't have to, put a max-width breakpoint and let Macaw handle the rest.
+
+<b>How to reload your preview page?</b>
+Refresh your page by clicking on the burger icon in the URL input (works only once). To bypass that limitation, you must create an empty page to be able to reload them just by toggling between them.
+<img src="https://s3-eu-west-1.amazonaws.com/0x756e696b6f.static/macaw_forum/howto_preview-reload-refresh.png" alt="screen capture - how to refresh your preview page">
+
+<b>How to publish my website?</b>
+It depends on your hosting provider but generally you’ll just need to upload your published file  with the help of an ftp app like Filezilla or Cyberduck.
+
+<b>How to rename a page?</b>
+<img src="https://s3-eu-west-1.amazonaws.com/0x756e696b6f.static/macaw_forum/howto-rename-page.png" alt="screen capture - how to rename a page">
+<figcaption>Right click or CTRL + click > Rename Page or double click on the name</figcaption>
+
+<b>How to reset state style in the rich text tool editor?</b>
+<img src="https://s3-eu-west-1.amazonaws.com/0x756e696b6f.static/macaw_forum/howto_style-reset.png" alt="screen capture - how to reset state style">
+Right click or CTRL + click > Clear Styles
+
+<b>How to erase colors?</b>
+<img src="https://s3-eu-west-1.amazonaws.com/0x756e696b6f.static/macaw_forum/howto_delete-swatches.png" alt="screen capture - how to erase color">
+Right click on a color or CTRL + click > Delete Swatch

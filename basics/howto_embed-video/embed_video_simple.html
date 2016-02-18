@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2015 by anonymous (http://jsbin.com/wobexafati/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
+<style>
+  #container {
+    position: relative;
+  }
+  
+  video, canvas {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid red;
+  }
+  video {
+    height: 100%;
+    position: absolute;
+  }
+  body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+</style>
+</head>
+<body>
+  <div id="container">
+    <canvas width="634" height="264"></canvas>
+    <video controls width="634" height="264">
+          <source src="http://video-js.zencoder.com/oceans-clip.mp4"  type="video/mp4">
+          <source src="http://video-js.zencoder.com/oceans-clip.webm" type="video/webm">
+          <source src="http://video-js.zencoder.com/oceans-clip.ogv" type="video/ogg; codecs=theora, vorbis">
+    </video>
+  </div>
+</body>
+</html>

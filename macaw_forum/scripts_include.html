@@ -1,0 +1,75 @@
+Trick - #include for Macaw (insert the content of one file into another one).
+
+Until the team adds an include functionality, i'm sharing with you this trick which will allow you to include several pages (or elements) into another one.
+Include means you only care block after block, focus only on one point not the whole page, and when you change one parameter... it changes everywhere. <b>Welcome to Macaw 2.0</b> ;)
+
+<img src="http://cl.ly/YEgU/macaw_include.png" alt="include within macaw"
+
+<hr>
+<b><u>the Code</u></b>
+
+<b>Function</b>
+<code>(function ($) {
+  $.include = function (options) {
+    $.ajax({
+      url: options.url,
+      async: false, //!important
+      success: function (result) {
+        result = $(result).filter("#include").html();
+        if (options.prependResult) {
+          $("body").prepend(result);
+        } else {
+          $("body").append(result);
+        }
+      }
+    });
+  };
+}(jQuery));</code>
+
+<u>Notes:</u>
+#include: contains the element that you want to load
+/!\ #include element itself will be dismissed
+body: where you'll load those elements (you can also target an "#ID" or ".style" ()but careful with this last one)).
+
+<b>Function invocation</b>
+<code>$.include({url: '_header.html', prependResult: true});
+$.include({url: '_footer.html', prependResult: false});</code>
+
+<u>Notes</u>
+prepend=true => load before
+prepend=false => load after
+<b>/!\ order is important !</b>
+<b>/!\ “Consolidate Page Styles” must be checked.</b>
+
+<hr>
+<b><u>the Example File</u></b>
+
+Download-it here: http://cl.ly/YERr
+
+In my example file i've included my header, another content block and my footer into my index file, and to page_2 and page_3. I also played a little bit with breakpoint.
+
+<u>the negatives points:</u>
+- Macaw will export full pages, it means you'll have all metadata, styles and scripts links. You'll need to erase those and use some front-end dev tools before building the final page.
+Example of front-dev tool: Hammer (http://hammerformac.com/), Prepros (http://alphapixels.com/prepros/), Mixture (http://mixture.io/), Codekit (https://incident57.com/codekit/index.html) or a build system like Grunt, Gulp or npm.
+
+<b>Now, imagine Macaw with include, real smart objects, smart colours and you'll have a bright future for Macaw ;)</b>
+
+For all javascript junkies, don't hesitate to tweak this code and share ;)
+
+Have fun with Macaw !
+
+
+
+------------------------------------
+
+@emlazo1 quick explanation on what's next with Hammer:
+_ Duplicate your preview folder.
+_ Clean all your included files (remove all head and include parts). Also clean your js files (you don't need part of the code for including pages anymore).
+_ Insert <code><!-- @include _yourpage --></code> manually in your pages where you want that hammer loads your included pages.
+(example, typically, you'll put <code><!-- @include _header --></code> just after <code><body class="body clearfix"></code>)
+_ Drop your folder into hammer. Boom! It automatically builds your final pages.
+I don't have much time today but do you want a clean tutorial about this workflow ? It's not perfect but you don't need any particular coding knowledge.
+
+[update] Of course you can do all this manually with a simple (and free) text editor, just insert the pages manually and repeat. That's just html code, nothing hard. Hammer is really useful if you're used to code website by yourself and add some more code after Macaw.
+
+I'm actually building a better workflow with grunt and this “plugin” for automate some tasks. I'll let you know when it will be ready.

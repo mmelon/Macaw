@@ -1,0 +1,52 @@
+@iamsamparody,
+
+Macaw will always write your CSS the same way (as I write above this post).
+
+<br>
+<h2>How to name your elements in Macaw?</h2>
+<br>
+
+<img src="http://cl.ly/ZH7l/macaw_forum_howtoname.png" alt="how to name your element with Macaw">
+<i>Note that the second class name is optional but is really handy for a quite similar elements.</i>
+
+<a href="https://github.com/ngenty/Macaw-Playground/raw/master/00_Macaw-forum-examples/macaw_forum_naming-CSS.mcw">Download my example file</a>
+
+As you can see you need at least a <b>tag</b> and a <b>class name</b>. You can let Macaw do your job, but it will fail… and your front-dev will hate you.
+
+<b>Tag</b>
+Tags list: http://www.w3schools.com/tags/
+Each tag has a particular purpose, choose them carefully.
+/!\ Macaw doesn't understand all of them. Don't worry, you only need some of them to be fully happy with Macaw.
+
+<u>Most used ones:</u>
+h1>h6 for titles, p for paragraphs, a for links,
+header, footer, section, article, aside for wrapping your content,
+img for images,
+nav for menu
+ul, ol, li, etc… for lists (for semantic purpose only),
+etc…
+And if you aren't sure, use div.
+
+<b>Class name</b>
+Simple logic: BEM.
+http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+
+Stay simple, describe as much as needed and try to group your different blocks.
+Example:
+<img src="http://cl.ly/ZI8Y/macaw_forum_howtoname-ouline.png" alt="outline tab">
+<img src="http://cl.ly/ZHpC/macaw_forum_howtoname-css_resized.png" at="published css">
+Macaw won't help you during that phase because the input is not resizable! So keep it simple and concise.
+
+<b><i>/i\<u>Important Tip</u>: do not try to finish the whole design of your page (as you can do with Sketch). For example, if you want to make a list (ul, li) don't try to copy/paste 10 elements because Macaw will disappoint you and you'll be angry at it… plus it's not the purpose of Macaw. Stylize only the unique elements (don't bother to duplicate them), then edit your HTML file for repeating them after its publishing.</i></b>
+
+I'm sure I miss something important (long day) don't hesitate to correct me if needed :))
+Hope that little post will help you and others to better understand Macaw.
+
+Keep learning HTML & CSS and have fun with Macaw!
+
+-------
+
+Macaw writes the CSS in a particular order: Basic Style(Alphabetical)/Your Style(Alphabetical)/Automatic Renaming Style(Macaw's). This last part shouldn't exist if you have done your job!
+
+- you can use multiple style names (2max.) if you want, but Macaw doesn't handle them very well. I mean sometimes it understands… sometimes not.
+- tell your developer when you wanted to use a pseudo-element by using _after/_before. Macaw doesn't handle them well (still experimental).

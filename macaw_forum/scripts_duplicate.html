@@ -1,0 +1,67 @@
+How to - Duplicate my element easily in Macaw - (snippet) + (example file)
+
+Hi everyone,
+Scarlet is really promising but still in beta and we mustn't forget that Macaw is still very powerful, that's why I'm going to update some threads and add more files.
+
+On major flaw in Macaw is that it doesn't allow us to create dynamic elements and the only solution so far was to copy/paste them. By doing that, each time you modify your original object you must apply them on every copy and you augment the possibility to add a new property by mistake… forcing Macaw to create a new class in your CSS. And by repeating the same objects you ask Macaw to do some heavy maths that can sometimes make the poor bird sick ;).
+
+Here is my solution for keeping my file lighter and the CSS cleaner, a <b>clone script</b>. Like that you can design only one of your element and clone it to see the result, a more HTML approach.
+The downside is that you wont be able to see the final result of your work inside Macaw without publishing (not entirely).
+
+
+<u>Here's the file</u>:
+<b>http://cl.ly/dWXy</b>
+
+
+<u>Here's the really basic script</u>:
+
+<code>$(document).ready(function() {
+  var $articles = $('.article');
+  // shots list (11+1 img)
+  for (var i = 0; i < 5; i++) {
+    $articles.clone().insertAfter($articles);
+  }
+  // here's where you can add the rest of the code for modyfing the content of the clones
+});</code>
+
+<u>Explanation</u>:
+_<b>.article</b> is the class of the element I want to duplicate,
+_<code>for (var i = 0; i < 5; i++) {
+    $articles.clone().insertAfter($articles);
+  }</code> is the loop that will duplicate your element. You need to minus the one you already created with Macaw (in my example I want 12, so I create 11 new ones).
+
+Duplicating an object is good but generally don't reflect the result you want, so you can add a <b>second part to that script for modifying the content of each one of the clones</b>.
+
+
+<u>Example for a list of images</u>:
+
+<code>var img_list = [
+    "https://unsplash.it/500?image=10",
+</code>…
+<code>"https://unsplash.it/500?image=120",
+  ];
+    $.each(img_list, function(i, value) {
+      $(".shots--li img").eq(i).attr("src", value);
+  });</code>
+
+<u>Explanation</u>:
+_<b>img_list</b> is the list of my external images. Currently urls but you can add your local files, like <code>"../img/image.png"</code>.
+<i><u>Note</u>: in that case do not forget that <b>img.png</b> is on the same level as your <b>.mcw</b>. In that case you must open your index.html manually, preview and remote preview won't load those images.</i>
+
+If you need to modify some texts replace <code>$(".shots--li img").eq(i).attr("src", value);</code> by <code>$(".element").eq(i).html(value);</code>
+
+<u>Example for a list of title</u>:
+
+<code>var title_list = [
+    "Scarlet is so good, I\'m crying rainbows each time I open it.",
+</code>…
+<code>"Scarlet will be the next \"App of the Year\" 2016!",
+  ];
+    $.each(title_list, function(i, value) {
+    	$(".element__title").eq(i).attr("src", value);
+  });</code>
+
+<i><u>Note</u>: if you need to add a <b>"</b> in one of your title add a <b>\</b> before it, like that</i> <code>\"</code>.
+
+That's all for that clone script!
+<i>It surely needs a rewriting but it works fine without being too complicate so I stay with that version for now. Meanwhile if you want to arrange it (with arrays), do not hesitate! :)</i>

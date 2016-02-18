@@ -1,0 +1,121 @@
+Intro:
+
+Today is a day that I have been waiting for two and a half years. Every once in a while a revolutionary new product comes along…anyway today I am going to present 3 new products of that kind.
+
+1. a widescreen mail form with input controls!
+
+2. a responsive mobile form element!
+
+3. and a breakthrough internet mail sending device!
+
+Are you getting it? These are not three different devices, this is one script! And we are calling it: iForm
+
+< /joke >
+
+
+Before you start:
+
+The server that your site is hosted on must be enabled for php  (which is usally the case).
+
+Sometimes per default a hoster has disabled the functionality of sending mails from your site. Often you just need to define an „primary“ email adress that can be used to send mails from your site. Something like postmaster@, info@ etc. In that case you have to contact your hoster to enable that or do it over a web interface or some geeky command line stunts.
+
+The script works with both methods POST and GET. Here I use "post".
+
+
+The Form:
+
+- You need to create an error page and a success page that are shown to the user depending if the mail was sent or not. This is necessary because in the script, there will be inputs like email adress and name required.
+
+- Draw a bunch of input fields on a page, just like you need them. You need at least 4. Use the input drawing tool.
+<img src="https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/input-tool.png"img>
+
+1. one for the name of the user that sends you the mail*
+2. one for his email adress*
+3. one for the subject*
+4. one for the message, using the textarea tool
+
+*=required
+
+- You can name these fields in the inspector of Macaw or in the outline just like you wish and in any language you wish. <img src="https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/input_name.png"img>
+
+- !Important: In the „INPUT“ section of Macaw, where you define what type of field this is, you habe to name your fields exactly „name“, „email“ and „subject“. Or you have to rename the equivalents in the script to the exact same names.
+
+- The input field for the name of the sender of the email has to be „name“ and its type is „text“ <img src="https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/input_exact_name.png"img>
+
+- The input field for the email adress of the sender has to be „email“ and its type has to be changed to „email“ using the pop-up-window in the inspector palette. <img src="https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/email_input.png"img>
+
+- The input field of the subject is to be called „subject“ and its type is text.
+
+- The input field for the text area should be „message“ the typ is again „text“. This is not a required field of the script.
+
+- Set the rezise behaviour of the text area, if you like. Shall it expand to the side, to the bottom or both? <img src= "https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/rezise%E2%80%93text_area.png"img>
+
+- Draw a button with the button tool. Type „send“ or anything like that onto the button and style it like you wish. <img src="https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/Button_tool.png" img>
+
+- Select the button and set the type of it to „submit“ in the advanced panel further down in the inspector. <img src="https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/type_is_submit.png"img>
+
+- Group these elements, e.g. by selecting them all and press command+g (on a Mac).
+
+- Name the new group „form“. Or form.something.whatever <img src="https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/grouped_to_a_form.png"img>
+
+- I think it is a good idea to set the input fields in pixel size, also the button.
+
+- Depending on your layout, I would recommend to set the orientation of the input fields to centered insde the form element (the div that is called “form“).
+
+- On lower breakpoints one can change the width of the input fields to %, but keep the height in px. You can also work with minimum and max. sizes which you can change for various breakpoints.
+
+- The containing div - the form element - you can set to %.
+
+You can also use the form element, that I ready made and change that like you wish. You can download the Macaw file here: https://dl.dropboxusercontent.com/u/5306874/Mail_Form_Macaw.zip
+
+
+The script:
+
+- downbload the script her: https://dl.dropboxusercontent.com/u/5306874/iForm_Mail_Script.zip
+
+- You can rename it like you wish
+
+- Copy the file name of the script or type it into the action field of the form element in Macaw.
+
+- To do that select the form element and click the „advanced“ panel to open, down in the inspector palette in Macaw.
+
+- Click into the field next to „action= " and insert here the file name of the script <img src= "https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/link%E2%80%93script.png"img>
+
+- Set the „method“ to „post“ right down under the „action=„ field. ”Get" also works, but I didn't test it.
+
+
+Main configuration of the script:
+
+- Open the script in a text editor. (E.g. TextEdit, TextWrangler) <img src="https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/Main_Configuration.png"img>
+
+- See the pink lines? Those you have to edit.
+
+- Type in the relative path of your success and error pages. If these pages lie at „http:// www.Whatsup.com/error.html“ then you only need „error.html“.
+
+- Type in the email adress where the mails shall be sent to.
+
+- upload the script to your server into the same directory of your Macaw files.
+
+- Keep the script on your hard drive seperated from the Macaw publish folder, because of the over-write-when-publishing-behaviour of Macaw.
+
+Thats it (For the most part).
+
+
+Optional Configuration:
+
+- You can change the name of the input fields to your needs BUT they have to match those names that you choose in Macaws Input fields. There is a part in the script that lists the input fields. Changing their names there would change the whole game. I didn’t test it, so if anyone wants to… . <img src="https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/optional_Configuration_1.png"img>
+
+- Also you can change here if a field is required or not. Setting the „0“ to „1“ switches required on. Changing ”1” to ”0” switches required off. That I did test - it works.
+
+
+- There is a bunch of error messages. In my set up they only get displayed in the URL field of the browser. In my version of the script those messages were in german. I changed them to english (hope I did it right). <img src="https://dl.dropboxusercontent.com/u/5306874/screenies%20Tutorial/optional_Configuration_2.png">
+
+
+Download:
+
+The sript: https://dl.dropboxusercontent.com/u/5306874/iForm_Mail_Script.zip
+
+The form element/ Macaw file: https://dl.dropboxusercontent.com/u/5306874/Mail_Form_Macaw.zip
+
+
+I hope I got everything right. If you find any mistakes don’t tell anybody! No, please post them here.

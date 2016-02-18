@@ -1,0 +1,46 @@
+How to work with external webfonts.
+
+Macaw uses the <b>PostScript name</b> of your font which some time differ from its <b>full name</b> or file name.
+Plus in your case the fontsquirrel font generator lowered cased its name… .
+
+Example with the excellent M+ WEB FONTS (http://mplus-fonts.sourceforge.jp)
+Download it <a href="http://www.fontsquirrel.com/fonts/M-1c#fontface">here</a> (select the “Webfont Kit” tab  > “Download @Font-Face Kit”)
+
+<img src="https://s3-eu-west-1.amazonaws.com/0x756e696b6f.static/macaw_forum/font-name-mystery-webfont.png" alt="font name mystery resolved">
+You can see that Macaw use the correct font family name inside the font list.
+Now, when you publish your code:
+<code>body {
+  background-color: rgb(255, 255, 255);
+  font: normal 1em/1.38 mplus-1c-light;
+  color: rgb(0, 0, 0);
+}</code>
+You can see that Macaw now uses the PostScript name. <b>This is the name you need to use in your Head & Tail section as your font-family name.</b>
+
+In my Head & Tail section I can now link my file like this:
+<code>@font-face {
+font-family: 'mplus-1c-light';
+…
+}</code>
+
+So, next time, all you have to do is publish your code and see what Macaw expect for the font family name.
+
+Example:
+<b>Museo_Sans500</b> in <code>font-family: 'Museo_Sans500';</code> <u>is the name used by Macaw</u> not the name of your font or font file.
+When you look at your CSS, it clearly use the same font name (Museo_Sans500) ? Something like <code>font: normal 1em/1.38 Museo_Sans500;</code>.
+
+And your directory must be something like this:
+<code>/your project folder/
+|--yourfile.mcw
+|--yourfile
+|  |--css
+|  |  |--index.css
+|  |  |--standardize.css
+|  |--index.html
+|  |--js
+|  |  |--jquery-min.js
+|--fonts
+   |--MuseoSans_500.eot
+   |--museosans_500-webfont.woff2
+   |--MuseoSans_500.woff
+   |--MuseoSans_500.ttf
+   |--MuseoSans_500.svg</code>
